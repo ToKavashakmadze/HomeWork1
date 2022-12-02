@@ -1,0 +1,99 @@
+namespace ConsoleApp36
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine("Enter a number");
+            int inputnumber = Convert.ToInt32(Console.ReadLine());     
+            Console.WriteLine(inputnumber % 5 == 0 ?"YES" : "NO");
+           
+
+
+            Console.ReadLine();
+
+
+            Console.Write("Enter X: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter Y: ");
+            int Y = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Before swapping: x = {x} y = {Y}");
+
+            x = x + Y;
+
+            Y = x - Y;
+
+            x = x - Y;
+
+            Console.WriteLine($"After swapping x = {x} y = {Y}");
+
+
+
+            Console.ReadLine();
+
+
+
+            Console.Write("Enter Num1: ");
+
+            int Num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Num2: ");
+
+            int Num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"{Num1} + {Num2} = {Num1 + Num2}");
+
+            int min = Num1 > Num2 ? Num2 : Num1;
+            int max = Num1 < Num2 ? Num2 : Num1;
+
+            Console.WriteLine($"{max}-{min} = { max - min}");
+            Console.WriteLine($"{Num1} * {Num2} = {Num1 * Num2}");
+
+            string cannotDivide = " Not Allowed To Divide by Zero";
+            Console.WriteLine(min == 0 ? cannotDivide : max / min);
+
+
+
+
+            Console.ReadLine();
+
+
+
+            Console.Write("enter a number: ");
+            Double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("enter operator: ");
+            string op = Console.ReadLine();
+
+            Console.Write("enter another number: ");
+            Double num2 = Convert.ToInt32(Console.ReadLine());
+
+            if (op == "+")
+            {
+                Console.WriteLine(num1 + num2);
+            }
+            else if (op == "-")
+            {
+                Console.WriteLine(num1 - num2);
+            }
+            else if (op == "*")
+            {
+                Console.WriteLine(num1 * num2);
+            }
+            else if (op == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            }
+            else
+            {
+                Console.Write("invalid operator");
+            }
+
+           
+
+       
+        }   
+        
+    }
+}
